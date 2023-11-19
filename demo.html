@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click to Copy</title>
+    <style>
+      /* Optional: Add some styling to the button */
+      #copyButton {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="textToCopy">Hello, Click to Copy!</p>
+    <button id="copyButton" onclick="copyText()">Copy Text</button>
+
+    <script>
+      function copyText() {
+        // Get the text to copy
+        var textToCopy = document.getElementById("textToCopy");
+
+        // Create a temporary input element
+        var tempInput = document.createElement("input");
+        tempInput.value = textToCopy.innerText;
+        document.body.appendChild(tempInput);
+
+        // Select the text in the input element
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999); /* For mobile devices */
+
+        // Copy the text to the clipboard
+        document.execCommand("copy");
+
+        // Remove the temporary input element
+        document.body.removeChild(tempInput);
+
+        // Provide feedback to the user (optional)
+        alert("Text copied: " + textToCopy.innerText);
+      }
+    </script>
+  </body>
+</html>
