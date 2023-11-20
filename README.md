@@ -5,18 +5,18 @@ This is static webpage for my Gamescribe minecraft SMP server. I am hosting a Mi
 
 # Comming Soon
 
-```
+```bash
 mc.Gamescribe.club
 ```
 
-
 ## Demo
 
-https://gamescribe.club
+<https://gamescribe.club>
+
 ## Tech Stack
 
 **Client:** HTML, CSS and JS
+
 ## Authors
 
 - [@asabhi6776](https://www.github.com/asabhi6776)
-
