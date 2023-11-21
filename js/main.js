@@ -67,7 +67,7 @@ $(document).ready(() => {
 });
 
 const updatePlayercount = (ip, port) => {
-    $.get(`https://api.bybilly.uk/api/players/${ip}/${port}`, (result) => {
+    $.get(`https://api.gamescribe.club/api/players/${ip}/${port}`, (result) => {
         if (result.hasOwnProperty('online')) {
             $(".sip").html(result.online);
         } else {
