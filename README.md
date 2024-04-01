@@ -20,3 +20,7 @@ mc.Gamescribe.club
 ## Authors
 
 - [@asabhi6776](https://www.github.com/asabhi6776)
+
+## Credit
+  Loading Screen animation
+- [@Shefali](https://twitter.com/Shefali__J)
